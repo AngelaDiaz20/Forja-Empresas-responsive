@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --red-color:#A40101;
+    --blue-color:#2CA3AB;
+    --gray-color:#C4C4C4;
+    --orange-color:#F3610E;
+    --dark-blue-color:#1D1B45;
+    --white-color:#FFFFFF;
+    --black-color:#191919;
+    --blue-bton-color:#0D5A8A;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Inicio-----------------------------*/
+
+#header-index{
+    grid-area: header-index;
+}
+
+#main-index{
+    grid-area: main-index;
+}
+
+footer{
+    grid-area: footer;
+    background-color: red;
+}
+
+.container-grid{
+    display: grid;
+    grid-template:"header-index" 100px
+                  "main-index" auto
+                  "footer" 50px; 
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: "h-pte1",
+                           "h-pte2";
+}
+
+.info-contact{
+    display: flex;
+    max-width: 250px;
+    align-items: flex-start;
+    margin-top: 10px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.info-contact i{
+    color:var(--white-color);
+    margin-right: 7px;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    font-size: 9px;
+    padding: 5px;
+    box-shadow: 0 2px 3px var(--black-color);
+}
+
+#ubic{
+    padding: 5px 6.8px;
+}
+
+.info-p p{
+    margin:0 0 4px;
+}
+
+.bton-login{
+    background-color: var(--blue-bton-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bton-login i{
+    margin-left: 5px;
+}
+
+.bton-login:hover, .bton-ingresar:hover{
+    background-color: var(--blue-bton-color);
+    transform: translateY(-0.5px);
+    box-shadow: 0px 2px 3px var(--black-color);
+    cursor: pointer;
+}
+
+.h-pte1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 10px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.inf-pte1{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.imgenes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.imgenes img{
+    width: 200px;
+}
+
+.h-pte2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px 0;
+}
+
+.linea{
+    display: none;
+}
+
+.h-pte2 i{
+    font-size: 50px;
+    color: var(--orange-color);  
+}
+
+.syrin i{  
+    font-size: 35px;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    width: 100%;
+}
+
+.bg-banner{
+    background-image: url(../img/2.\ medico.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -120px;
+    width: 100%;
+}
+
+.conten-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 75%;
+    text-align: center;
+}
+
+.conten-banner h2{
+    color: var(--orange-color);
+    font-size: 20px;
+    margin: 0
+}
+
+.conten-banner h1{
+    font-size: 24px;
+    margin: 5px;
+}
+
+.fa-ul li{
+    margin: 10px;
+}
+.fa-ul li i{
+    color: var(--red-color);
+    font-size: 20px;
+}
+
+.bg-cov{
+    background-image: url(../img/4.\ covid.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.title-cov{
+    display: flex;
+    align-items: center;
+}
+
+.signos img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.que-hacer img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.oms{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+.oms img{
+    width: 100px;
+    margin:0;
+}
+
+.oms a:hover{
+    font-size: 16px;
+}
+
+#covicho{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.signos{
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.que-hacer{
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.sec-covicho{
+    background-color: #191919bd;
+    width: 100%;
+}
+
+.sec-covicho p{
+    background-color: var(--dark-blue-color);
+    color: white;
+    padding: 10px 5px;
+    margin:0 0 2px;
+}
+
+.sec-covicho p:hover{
+    background-color: #2f2c6d;
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 3px 0 40px;
+    text-align:center;
+    font-size: 11px;
+}
+
+header img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.h-pte2 .linea:hover{
+    transform: none;
+}
+
+
+/*Login-------------------------------*/
+
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 95%;
+    height: 100vh;
+}
+
+.bg-login{
+    background-image: url(../img/10.png);
+    background-position-x:-px;
+}
+
+.logo-lgin{
+    display: flex;
+    flex-direction: column;
+    background-color: #90dbe0;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    padding: 50px 0 50px;
+    font-size: 16px;
+    
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 0;
+    font-size: 16px;
+    width: 80%;
+}
+
+.form-group input{
+    height: 35px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #A8DDE0;
+    background-color: #a8dde069;
+    margin-top: 10px;
+}
+
+.bton-ingresar{
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    border: 1px solid #2f2c6d;
+    margin: 20px 10px 20px;
+    padding: 5px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#login a{
+    color: var(--black-color);
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+#login .bton-login{
+    margin-bottom: 0px;
+    text-align: center;
+    width: 140px;
+    border: 1px solid var(--blue-color);
+}
+
+.form-login a{
+    color: #19191996;
+}
+
+.contain-all{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    font-weight: bold;
+    margin: 15px 0;
+    box-shadow: 2px 3px 10px var(--black-color);
+}
+
+.bton-ingresar:hover{
+    background-color: #ca500f;
+}
+
+
+/*Dashboard--------------------------*/
