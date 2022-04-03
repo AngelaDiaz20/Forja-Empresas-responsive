@@ -607,76 +607,130 @@ tr:hover{
 }
 
 
-/*dashboard-----------------------*/
+/*Dashboard-----------------------------------*/
 
-#dashboard {
-    height: 100%;
-    width: 100%;
+#header-dashboard{
+    position: fixed;
+    background: #191919;
+    padding: 0;
+    width: 250px;
+    height: 27px;
+    transition: 0.5s;
+    z-index: 20;
+}
+
+.sidebar span{
     margin: 0;
-    display: flex;
 }
 
-.menu-side {
-    width: 20%;
-    background-color: var(--black-color);
+.sidebar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
     height: 100%;
-    position: absolute;
+    margin-top: 27px;
+    padding-top: 150px;
+    left: 0;
+    background: #191919;
+    transition: 0.5s;
+    transition-property: left;
+    z-index: 10;
 }
 
-.log-menu{
-    text-align: center;
-    position: relative;
-    top: 16%;
+.sidebar .buttons{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
 }
 
-#log{
-    width: 70%;
-}
-
-.log-menu img {
+.sidebar .image{
+    margin: 0 5%;
     width: 90%;
+    margin-bottom: 50px;
 }
 
-.log-menu img:hover{
-    transform: scale(1.1);
-    transition-duration: 0.3s;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100px;
+.sidebar a{
     text-align: center;
-    position: relative;
-    top: 40%;
-}
-
-.bton-menu-side{
-    text-align: center;
-    font-weight: 600;
-}
-
-.bton-menu-side a:hover{
-    background-color: #a42f01;
-    color: var(--white-color);
-    box-shadow: 0 2px 3px var(--blue-color);
-    transition-duration: 0.5s;
-    transform: translateX(1px);
-    font-size: 105%;
-}
-
-.bton-menu-side a {
-    background-color: var(--gray-color);
     border: 3px solid var(--orange-color);
-    border-radius: 5px;
-    display: flex;
+    background-color: var(--gray-color);
+    color: var(--black-color);
+    display:flex;
     flex-direction: column;
-    margin: 10px 0px 10px 0px;
-    padding: 10px 0px 10px 0px;
+    width: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property:background;
+    padding-bottom: 5px;
+}
+
+.sidebar a:hover{
+    background: #d7ec51;
+}
+
+.sidebar i{
+    margin-top:10px;
+}
+
+
+label #sidebar_btn{
+    z-index: 5;
+    position: fixed;
+    left: 20px;
+    color:var(--white-color);
+    font-size: 25px;
+    margin: 2px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property:color;
+}
+
+label #sidebar_btn:hover{
+    color: #ec7051;
+}
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar img{
+    visibility: hidden;
+}
+
+#check:checked ~ .sidebar a span{
+   display: none;
+}
+
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+    height: 50px;
+}
+
+#check:checked ~ .sidebar i{
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+ }
+
+ #check:checked ~ #header-dashboard{
+     width: 60px;
+ }
+
+.content{
+    height: 100vh;
+    width: 80%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#check:checked ~ .content{
+    margin-left: 60px;
+}
+#check{
+    display: none;
 }
 
 .user-account{
@@ -684,8 +738,9 @@ tr:hover{
     flex-direction: column;
     position: absolute;
     right: 0px;
-    width: 80%;
+    width: 100%;
     height: 100%;
+    background-size: 200px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.658), rgba(255, 255, 255, 0.658)), url(../img/13.\ guerreros.png);
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -702,10 +757,12 @@ tr:hover{
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #C4C4C4, #C4C4C4, #FFFFFF, #C4C4C4, #FFFFFF, #C4C4C4);
-    width: 200px;
+    width: 120px;
+    height: 50px;
     padding: 0px 5px 6px;
     border-radius: 8px;
-    margin-right: 20px;
+    margin-right: 5px;
+    font-size: 14px;
 }
 
 .user div:hover{
@@ -715,9 +772,9 @@ tr:hover{
 .user i {
     background-color: var(--white-color);
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
     border: 2px solid var(--orange-color);
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 10px;  
 }
 
@@ -726,23 +783,26 @@ tr:hover{
     text-align: center;
     font-weight: bold;
     margin: 50px 0px 70px 0px;
-    font-size: 20px;
+    font-size: 16px;
+    padding-left: 50px;
 }
 
 .search-id {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
+    padding-left: 50px;
 }
 
 .number-id input{
     border-radius: 0;
     background-color: white;
     border: none;
-    margin: 0 10px;
     border-bottom: 2px solid var(--black-color);
-    font-size: 18px;
-    width: 330px;
+    font-size: 15px;
+    width: 255px;
+    margin-bottom: 15px;
 }
 
 .ico i{
@@ -750,7 +810,7 @@ tr:hover{
     border-radius: 5px;
     border: 2px solid #1783db;
     color: var(--white-color);
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px 12px;
 }
 
@@ -771,8 +831,9 @@ tr:hover{
 
 .franja-foot img{
     width: 100%;
-    
 }
+
+
 
 
 /*FORMULARIO--------*/

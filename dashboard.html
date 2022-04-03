@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="es-Es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="dashboard" autor="Angela Díaz">
+        <meta name="pacientes" autor="Angela Díaz">
         <title> Forja | Dashboard </title>
         <link type="image/x-icon" href="img/icono-forja.svg" rel="icon">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -14,64 +13,62 @@
     </head>
 
 <body>
-    <main id="dashboard">
+    <input type="checkbox" id="check">
 
-    <div class="menu-side">
+    <header id="header-dashboard">
+        <label for="check">
+            <i id="sidebar_btn" class="fa-solid fa-bars"></i>
+        </label>
+    </header>
+    <!--header final-->
+    <!--sidebar começo-->
+    <div class="sidebar">
 
-        <div class="log-menu">
-            <a href="index.html">
-                <div class="dash-logo">
-                    <img id="log" src="img/logo.png" alt="logo de forja Empresas">
-                    <img src="img/forja.png" alt="">
-                </div>
-            </a>
-        </div>
+        <img src="img/0. logoforja.png" class="image" alt="">
 
         <div class="buttons">
-            <div class="bton-menu-side">
-                <a href="pacientes.html" class="btn-Pacientes"><i class="fa-solid fa-users"></i>Pacientes</a>
-            </div>
-
-            <div class="bton-menu-side">
-                <a href="" class="btn-vacunacion"><i class="fa-solid fa-syringe"></i>Vacunación</a>
-            </div>
-            <div class="bton-menu-side">
-                <a href="login.html" class="btn-cerrar-ses"><i class="fa-solid fa-power-off"></i>Cerrar sesión</a>
-            </div>
+        <div class="bton-menu-side">
+            <a href="pacientes.html" class="btn-Pacientes"><i class="fa-solid fa-users"></i> <span>Pacientes</span></a>
         </div>
-        
+        <div class="bton-menu-side">
+            <a href="" class="btn-vacunacion"><i class="fa-solid fa-syringe"></i><span>Vacunación</span></a>
+        </div>
+        <div class="bton-menu-side">
+            <a href="login.html" class="btn-cerrar-ses"><i class="fa-solid fa-power-off"></i><span>Cerrar sesión</span></a>
+        </div></div>
     </div>
+    <!--sidebar final-->
+    <div class="content">
+        <div class="user-account">
 
-    <div class="user-account">
-
-        <div class="user">
-            <div>
-                <a href=""><i class="fa-solid fa-user" href="index.html"></i></a>
-                <h4>Carolina Loaiza</h4>
-            </div>
-        </div>
-
-        <div class="welcome-user">
-            <h1>BIENVENIDOS</h1>
-        </div>
-
-        <div class="search-id">
-                <div class="number-id">
-                    <label for="number-id" class="number-id"></label>
-                    <input type="number" name="number-id" id="number-id" placeholder="ㅤDigite el numero de documento" required>
+                <div class="user">
+                    <div>
+                        <a href=""><i class="fa-solid fa-user" href="index.html"></i></a>
+                        <h4>Carolina Loaiza</h4>
+                    </div>
                 </div>
 
-                <div class="ico">
-                    <a href="dashboard-alert.html"><i class="fa-solid fa-magnifying-glass" ></i></a>
-                    <a href="dashboard.html"><i class="fa-solid fa-arrow-rotate-right"></i></a> 
+                <div class="welcome-user">
+                    <h1>BIENVENIDOS</h1>
                 </div>
-        </div>
-        <div class="franja-foot">
-            <img src="img/12. franja.svg" alt="" >
-        </div>
+
+                <div class="search-id">
+                        <div class="number-id">
+                            <label for="number-id" class="number-id"></label>
+                            <input type="number" name="number-id" id="number-id" placeholder="ㅤDigite el numero de documento" required>
+                        </div>
+
+                        <div class="ico">
+                            <a href="dashboard-alert.html"><i class="fa-solid fa-magnifying-glass" ></i></a>
+                            <a href="dashboard.html"><i class="fa-solid fa-arrow-rotate-right"></i></a> 
+                        </div>
+                </div>
+                <div class="franja-foot">
+                    <img src="img/12. franja.svg" alt="" >
+                </div>
+            </div>
     </div>
 
-    </main>
 </body>
 
 </html>
