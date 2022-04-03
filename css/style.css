@@ -594,7 +594,7 @@ tr:hover{
     }
     
     .bton-eliminar{
-        display: inline;;
+        display: inline;
         padding: 5px;
         background-color: #A40101;
         color: var(--white-color);
@@ -604,4 +604,298 @@ tr:hover{
         border: none;
         cursor: pointer;
     }
+}
+
+
+/*dashboard-----------------------*/
+
+#dashboard {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.menu-side {
+    width: 20%;
+    background-color: var(--black-color);
+    height: 100%;
+    position: absolute;
+}
+
+.log-menu{
+    text-align: center;
+    position: relative;
+    top: 16%;
+}
+
+#log{
+    width: 70%;
+}
+
+.log-menu img {
+    width: 90%;
+}
+
+.log-menu img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+.bton-menu-side{
+    text-align: center;
+    font-weight: 600;
+}
+
+.bton-menu-side a:hover{
+    background-color: #a42f01;
+    color: var(--white-color);
+    box-shadow: 0 2px 3px var(--blue-color);
+    transition-duration: 0.5s;
+    transform: translateX(1px);
+    font-size: 105%;
+}
+
+.bton-menu-side a {
+    background-color: var(--gray-color);
+    border: 3px solid var(--orange-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.user-account{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    width: 80%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.658), rgba(255, 255, 255, 0.658)), url(../img/13.\ guerreros.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: 95%;
+}
+
+.user{
+    display: flex;
+    justify-content: end;
+}
+
+.user div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #C4C4C4, #C4C4C4, #FFFFFF, #C4C4C4, #FFFFFF, #C4C4C4);
+    width: 200px;
+    padding: 0px 5px 6px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.user div:hover{
+    background: linear-gradient(to right, #e64242dc, #e64242dc, #FFFFFF, #C4C4C4, #FFFFFF, #C4C4C4);
+}
+
+.user i {
+    background-color: var(--white-color);
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid var(--orange-color);
+    font-size: 20px;
+    margin-right: 10px;  
+}
+
+.welcome-user {
+    color: var(--orange-color);
+    text-align: center;
+    font-weight: bold;
+    margin: 50px 0px 70px 0px;
+    font-size: 20px;
+}
+
+.search-id {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.number-id input{
+    border-radius: 0;
+    background-color: white;
+    border: none;
+    margin: 0 10px;
+    border-bottom: 2px solid var(--black-color);
+    font-size: 18px;
+    width: 330px;
+}
+
+.ico i{
+    background-color: var(--dark-blue-color);
+    border-radius: 5px;
+    border: 2px solid #1783db;
+    color: var(--white-color);
+    font-size: 20px;
+    padding: 5px 12px;
+}
+
+.ico i:hover{
+    background-color: #2f2c6d;
+    transform: translateY(-0.5px);
+    box-shadow: 0px 2px 3px var(--black-color);
+    cursor: pointer;
+}
+
+.franja-foot {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 0;
+    background-color: var(--blue-color);
+}
+
+.franja-foot img{
+    width: 100%;
+    
+}
+
+
+/*FORMULARIO--------*/
+
+#register-user{
+    border: 3px solid var(--gray-color);
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#register-user i{
+    font-size: 20px;
+}
+
+.form-register{
+    background-color: var(--gray-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.form-register input, .form-register select{
+    border: 2px solid var(--blue-color);
+    height: 35px;
+    margin: 10px 10px 10px 0px;
+}
+
+.date-register{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 1.5% 0 1.5%;
+}
+
+.date-register .group-data input{
+    display: flex;
+    margin-right: 35px;
+    width: 250px;
+}
+
+.title-user-new{
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    border: 1px solid var(--black-color);
+}
+
+.title-user-new i{
+    margin-left: 10px;
+}
+
+.title-user-new h3{
+    color: var(--white-color);
+    text-align: center;
+    font-weight: normal;
+    margin: 7px;
+}
+
+.title-user-new div{
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+
+.user-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-data div{
+    min-width: 300px;
+    width: 47%;
+}
+
+.user-data input, .form-control {
+    display: flex;
+    width:100%;
+}
+
+.user-data select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-control{
+    margin: 0px 10px;
+}
+
+.inputs3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputs3 div{
+    min-width: 200px;
+    width: 100%;
+}
+
+.inputs3 select{
+    width: 30%;
+}
+
+.inputs3 input, .inputs3 select{
+    width: 100%;
+}
+
+.radio-form div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 40px;
+}
+
+.radio-form{
+    margin: 15px 0;
+}
+
+#si, #no{
+    margin: 0;
 }
