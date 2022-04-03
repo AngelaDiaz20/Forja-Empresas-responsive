@@ -382,5 +382,226 @@ header img:hover{
     background-color: #ca500f;
 }
 
+/*registro nuevo usuario--------------------*/
 
-/*Dashboard--------------------------*/
+#header-register{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue-color);
+    padding: 0;
+}
+
+#header-register .logo{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--black-color);
+}
+
+#header-register .logo img{
+    width: 200px;
+}
+
+#header-register .franja{
+    margin: 0;
+    width: 100%;
+}
+
+.btons i{
+    background-color: var(--gray-color);
+    padding: 5px;
+    border-radius: 50%;
+    border: 3px solid var(--blue-color);
+    margin-left: 6px;
+    font-size: 20px;
+    color: var(--black-color);
+}
+
+.botons a{
+    text-decoration: none;   
+}
+
+.h2-user-new{
+    background-color: var(--dark-blue-color);
+    padding: 5px;
+    border-radius: 7px;
+    color: var(--white-color);
+    text-align: center;
+    font-weight: normal;
+    margin: 10px 1px;
+}
+
+/*Pacientes-------------------------------*/
+#patients{
+    margin-top: 20px;
+}
+
+.pacientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#no-id{
+    width: 200px;
+}
+
+#table-patients{
+    /*overflow-x: scroll;
+    scroll-snap-type: x mandatory;*/
+    width: 100%;
+    padding: 0 10px;
+}
+
+table{
+    font-size: 12px;
+	width:100%; 
+	border-collapse:collapse;
+    background-color:var(--gray-color);
+    text-align: center;
+}
+
+th{
+    border:2px solid var(--blue-color);
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    padding: 4px 2px;
+}
+
+td{
+	border:2px solid var(--blue-color);
+    padding: 6px;
+}
+
+tr:hover{
+    background-color: #19191954;
+}
+
+.bton-editar{
+    display: none;
+    padding: 5px;
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.bton-eliminar{
+    display: none;
+    padding: 5px;
+    background-color: #A40101;
+    color: var(--white-color);
+    border-radius: 5px;
+    width: 100px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.bton-editar-icon{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom:2px;
+    border: none;
+    padding: 5px;
+}
+
+.bton-eliminar-icon{
+    background-color: #A40101;
+    color: var(--white-color);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom:2px;
+    border: none;
+    padding: 5px;
+}
+
+.bton-editar:hover{
+    background-color: #1f747a;
+    box-shadow: 0 2px 3px var(--dark-blue-color);
+    color: var(--white-color);
+}
+
+.bton-eliminar:hover{
+    background-color: #5a0202;
+    box-shadow: 0 2px 3px var(--dark-blue-color);
+    color: var(--white-color);
+}
+
+#table-patients{
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.patients-btons{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+}
+
+.patients-btons .form-group{
+    display: flex;
+    width: 55%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.patients-btons .form-group input{
+    background-color: var(--white-color);
+    border: 1px solid var(--blue-color);
+    margin: 0;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.patients-btons .bton-ingresar i{
+    margin-left: 5px;
+}
+
+.patients-btons .bton-ingresar{
+    margin-left: 0;
+}
+
+#patients h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:800px ) {
+    
+    body{
+        background-color: #0D5A8A
+    };
+
+    .bton-editar{
+        padding: 5px;
+        background-color: var(--blue-color);
+        border-radius: 5px;
+        width: 100px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .bton-eliminar{
+        display: inline;;
+        padding: 5px;
+        background-color: #A40101;
+        color: var(--white-color);
+        border-radius: 5px;
+        width: 100px;
+        margin: 0 5px;
+        border: none;
+        cursor: pointer;
+    }
+}
