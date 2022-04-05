@@ -433,7 +433,150 @@ header img:hover{
     margin: 10px 1px;
 }
 
-/*Pacientes-------------------------------*/
+#patients{
+    margin-top: 50px;
+}
+
+.pacientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    font-size: 14px;
+	width:80%; 
+    margin: 0 auto;
+	border-collapse:collapse;
+    background-color: var(--gray-color);
+    text-align: center;
+}
+
+th{
+    border:2px solid var(--blue-color);
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    padding: 12px;
+}
+
+td{
+	border:2px solid var(--blue-color);
+    padding: 6px;
+}
+
+tr:hover{
+    background-color: #19191954;
+}
+
+.bton-editar{
+    padding: 5px;
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.bton-eliminar{
+    padding: 5px;
+    background-color: #A40101;
+    color: var(--white-color);
+    border-radius: 5px;
+    width: 100px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.bton-editar:hover{
+    background-color: #1f747a;
+    box-shadow: 0 2px 3px var(--dark-blue-color);
+    color: var(--white-color);
+}
+
+.bton-eliminar:hover{
+    background-color: #5a0202;
+    box-shadow: 0 2px 3px var(--dark-blue-color);
+    color: var(--white-color);
+}
+
+.tablepaciente{
+    width: 95%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+#table-patients{
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.patients-btons{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: -20px;
+}
+
+.patients-btons .form-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.patients-btons .form-group input{
+    background-color: var(--white-color);
+    border: 1px solid var(--blue-color);
+    margin: 0;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.patients-btons .bton-ingresar i{
+    margin:0 auto;
+}
+
+.patients-btons .bton-ingresar{
+    margin-left: 0;
+}
+
+#patients h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.patients-btons .form-group #no-id{
+    width: 200px;
+}
+
+.patients-btons .form-group{
+    padding: auto;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.patients-btons .form-group .ico{
+    margin-top: -15px;
+}
+
+
+/*Pacientes-------------------------------
 #patients{
     margin-top: 20px;
 }
@@ -450,8 +593,8 @@ header img:hover{
 }
 
 #table-patients{
-    /*overflow-x: scroll;
-    scroll-snap-type: x mandatory;*/
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
     width: 100%;
     padding: 0 10px;
 }
@@ -576,7 +719,9 @@ tr:hover{
     text-align: center;
     text-decoration: underline;
     margin-bottom: 30px;
-}
+}*/
+
+/*Dashboard*/
 
 #dashboard {
     height: 100%;
