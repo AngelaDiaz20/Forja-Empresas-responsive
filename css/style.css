@@ -14,12 +14,12 @@
 *{
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     font-size: 14px;
-    margin: 0;
-    padding: 0;
 }
 
 /*Inicio-----------------------------*/
@@ -205,6 +205,20 @@ header{
     align-items: center;
 }
 
+.signos{
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.que-hacer{
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: justify;
+}
+
 .signos img{
     width: 25px;
     margin-right: 10px;
@@ -235,20 +249,6 @@ header{
     justify-content: center;
     width: 100%;
     
-}
-
-.signos{
-    width: 90%;
-    margin: 0px auto;
-    padding: 20px;
-    text-align: justify;
-}
-
-.que-hacer{
-    width: 90%;
-    margin: 0px auto;
-    padding: 20px;
-    text-align: justify;
 }
 
 .sec-covicho{
@@ -372,7 +372,7 @@ header img:hover{
 .contain-all{
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     font-weight: bold;
     margin: 15px 0;
     box-shadow: 2px 3px 10px var(--black-color);
@@ -578,159 +578,76 @@ tr:hover{
     margin-bottom: 30px;
 }
 
-@media screen and (min-width:800px ) {
-    
-    body{
-        background-color: #0D5A8A
-    };
-
-    .bton-editar{
-        padding: 5px;
-        background-color: var(--blue-color);
-        border-radius: 5px;
-        width: 100px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .bton-eliminar{
-        display: inline;
-        padding: 5px;
-        background-color: #A40101;
-        color: var(--white-color);
-        border-radius: 5px;
-        width: 100px;
-        margin: 0 5px;
-        border: none;
-        cursor: pointer;
-    }
-}
-
-
-/*Dashboard-----------------------------------*/
-
-#header-dashboard{
-    position: fixed;
-    background: #191919;
-    padding: 0;
-    width: 250px;
-    height: 27px;
-    transition: 0.5s;
-    z-index: 20;
-}
-
-.sidebar span{
-    margin: 0;
-}
-
-.sidebar{
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    width: 250px;
+#dashboard {
     height: 100%;
-    margin-top: 27px;
-    padding-top: 150px;
-    left: 0;
-    background: #191919;
-    transition: 0.5s;
-    transition-property: left;
-    z-index: 10;
+    width: 100%;
+    margin: 0;
+    display: flex;
 }
 
-.sidebar .buttons{
-    height: 220px;
+.menu-side {
+    width: 20%;
+    background-color: var(--black-color);
+    height: 100%;
+    position: absolute;
+}
+
+.log-menu{
+    text-align: center;
+    position: relative;
+    top: 16%;
+}
+
+.log-menu img {
+    width: 90%;
+}
+
+.log-menu img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.buttons {
     display: flex;
     flex-direction: column;
-    justify-content: space-around
-}
-
-.sidebar .image{
-    margin: 0 5%;
-    width: 90%;
-    margin-bottom: 50px;
-}
-
-.sidebar a{
-    text-align: center;
-    border: 3px solid var(--orange-color);
-    background-color: var(--gray-color);
-    color: var(--black-color);
-    display:flex;
+    justify-content: space-around;
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: space-evenly;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+.bton-menu-side{
+    text-align: center;
+    font-weight: 600;
+}
+
+.bton-menu-side a:hover{
+    background-color: #a42f01;
+    color: var(--white-color);
+    box-shadow: 0 2px 3px var(--blue-color);
+    transition-duration: 0.5s;
+    transform: translateX(1px);
+    font-size: 105%;
+}
+
+.bton-menu-side a {
+    background-color: var(--gray-color);
+    border: 3px solid var(--orange-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
     text-decoration: none;
-    box-sizing: border-box;
-    transition: 0.5s;
-    transition-property:background;
-    padding-bottom: 5px;
+    font-size: 11px;
 }
 
-.sidebar a:hover{
-    background: #d7ec51;
-}
-
-.sidebar i{
-    margin-top:10px;
-}
-
-
-label #sidebar_btn{
-    z-index: 5;
-    position: fixed;
-    left: 20px;
-    color:var(--white-color);
-    font-size: 25px;
-    margin: 2px 0;
-    cursor: pointer;
-    transition: 0.5s;
-    transition-property:color;
-}
-
-label #sidebar_btn:hover{
-    color: #ec7051;
-}
-#check:checked ~ .sidebar{
-    left: -190px;
-}
-
-#check:checked ~ .sidebar img{
-    visibility: hidden;
-}
-
-#check:checked ~ .sidebar a span{
-   display: none;
-}
-
-#check:checked ~ .sidebar a{
-    font-size: 20px;
-    margin-left: 170px;
-    width: 80px;
-    height: 50px;
-}
-
-#check:checked ~ .sidebar i{
-    margin-left: 20px;
-    font-size: 25px;
-    margin-top: 10px;
- }
-
- #check:checked ~ #header-dashboard{
-     width: 60px;
- }
-
-.content{
-    height: 100vh;
-    width: 80%;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-#check:checked ~ .content{
-    margin-left: 60px;
-}
-#check{
-    display: none;
+.bton-menu-side i{
+    font-size: 16px;
 }
 
 .user-account{
@@ -738,13 +655,13 @@ label #sidebar_btn:hover{
     flex-direction: column;
     position: absolute;
     right: 0px;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    background-size: 200px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.658), rgba(255, 255, 255, 0.658)), url(../img/13.\ guerreros.png);
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: 95%;
+    background-size: 70%;
 }
 
 .user{
@@ -758,11 +675,9 @@ label #sidebar_btn:hover{
     align-items: center;
     background: linear-gradient(to right, #C4C4C4, #C4C4C4, #FFFFFF, #C4C4C4, #FFFFFF, #C4C4C4);
     width: 120px;
-    height: 50px;
     padding: 0px 5px 6px;
     border-radius: 8px;
-    margin-right: 5px;
-    font-size: 14px;
+    margin-right: 20px;
 }
 
 .user div:hover{
@@ -774,7 +689,7 @@ label #sidebar_btn:hover{
     border-radius: 50%;
     padding: 5px;
     border: 2px solid var(--orange-color);
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 10px;  
 }
 
@@ -784,25 +699,24 @@ label #sidebar_btn:hover{
     font-weight: bold;
     margin: 50px 0px 70px 0px;
     font-size: 16px;
-    padding-left: 50px;
 }
 
 .search-id {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    padding-left: 50px;
+    flex-wrap: wrap;
 }
 
 .number-id input{
     border-radius: 0;
     background-color: white;
     border: none;
+    margin: 0 10px;
     border-bottom: 2px solid var(--black-color);
-    font-size: 15px;
-    width: 255px;
-    margin-bottom: 15px;
+    font-size: 14px;
+    width: 250px;
+    height: 100%;
 }
 
 .ico i{
@@ -812,6 +726,7 @@ label #sidebar_btn:hover{
     color: var(--white-color);
     font-size: 15px;
     padding: 5px 12px;
+    margin-top: 15px;
 }
 
 .ico i:hover{
@@ -832,8 +747,6 @@ label #sidebar_btn:hover{
 .franja-foot img{
     width: 100%;
 }
-
-
 
 
 /*FORMULARIO--------*/
@@ -934,7 +847,6 @@ label #sidebar_btn:hover{
 }
 
 .inputs3 div{
-    min-width: 200px;
     width: 100%;
 }
 
@@ -959,4 +871,170 @@ label #sidebar_btn:hover{
 
 #si, #no{
     margin: 0;
+}
+
+
+
+
+@media (min-width: 768px) {
+    
+    .inf-pte1{
+        width: 50%;
+        justify-content:space-around;
+        margin-left: 90px;
+    }
+
+    .h-pte1{
+        padding-right: 0px;
+    }
+
+    .h-pte2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 10px 0;
+    }
+
+    .linea{
+        display: block;
+        width: 65%;
+    }
+
+    .syrin i{  
+        font-size: 35px;
+    }
+
+    .bg-banner{
+        background-position:0;
+    }
+
+    .conten-banner{
+        width: 75%;
+    }
+
+    .conten-banner h2{
+        font-size: 25px;
+    }
+
+    .conten-banner h1{
+        font-size: 28px;
+    }
+
+    .bg-cov{
+        background-image: url(../img/4.\ covid.svg);
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .signos{
+        width: 42%;
+    }
+
+    .que-hacer{
+        width: 46%;
+    }
+
+    /*Login*/
+
+    #login{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    /*formulario*/
+
+    #register-user{
+        padding: 15px;
+    }
+
+    .form-register{
+        border-radius: 14px;
+    }
+
+    .inputs3{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0 20px 0;
+    }
+
+    .inputs3 input, .inputs3 select{
+        width: 99%;
+    }
+
+    .radio-form div{
+        justify-content: center;
+    }
+
+    #si, #no{
+        margin: 0 5px;
+    }
+
+    /*Dashboard*/
+
+    .bton-menu-side a{
+        font-size: 16px;
+    }
+
+    .bton-menu-side i{
+        font-size: 18px;
+    }
+
+    .user i{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .user div{
+        width: 170px;
+    }
+
+    .user-account{
+        background-size: 60%;
+    }
+
+    .number-id input{
+        font-size: 16px;
+        width: 300px;
+        margin-left: 10px;
+    }
+
+
+
+}
+
+@media (min-width: 1024px){
+    .inf-pte1{
+        width: 40%;
+        justify-content:space-around;
+        margin-left: 120px;
+    }
+
+    .imgenes img{
+        width: 250px;
+    }
+
+    .linea{
+        padding-right: 10px;
+    }
+
+    /*Formulario*/
+    #register-user{
+        padding: 30px;
+        margin: 20px;
+    }
+
+    .form-register{
+        border-radius: 20px;
+    }
+
+    .user-account{
+        background-size: 30%;
+    }
+
+    .welcome-user{
+        font-size: 22px;
+        margin-right: 20px;
+    }
 }
