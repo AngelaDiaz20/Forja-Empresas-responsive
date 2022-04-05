@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="pacientes" autor="Angela Díaz">
+        <meta name="dashboard" autor="Angela Díaz">
         <title> Forja | Pacientes </title>
         <link type="image/x-icon" href="img/icono-forja.svg" rel="icon">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -46,111 +46,76 @@
             </section>
 
             <section id="table-patients">
+                <div class="tablepaciente">
                 <table>
-                    <thead>
-                        <tr>
-                            <th># DE REGISTRO</th>
-                            <th># DOCUMENTO</th>
-                            <th>NOMBRES</th>
-                            <th>APELLIDOS</th>
-                            <th>EDAD</th>
-                            <th>ACCIONES</th>
-                        </tr>
-                    </thead>
-                    
-                    <tbody>
-                        <tr>
-                            <td>1111</td>
-                            <td>456231</td>
-                            <td>Paola</td>
-                            <td>perezeses</td>
-                            <td>18</td>
-                            <td class="buttons">
+                    <tr>
+                        <th># DE REGISTRO</th>
+                        <th># DOCUMENTO</th>
+                        <th>NOMBRES</th>
+                        <th>APELLIDOS</th>
+                        <th>EDAD</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                    <tr>
+                        <td>1111</td>
+                        <td>456231</td>
+                        <td>Paola</td>
+                        <td>perezeses</td>
+                        <td>2+16</td>
+                        <td>
+                            <div>
                                 <button class="bton-editar">Editar<i class="fa-solid fa-pen"></i></button>
                                 <button class="bton-eliminar">Eliminar <i class="fa-solid fa-square-xmark"></i></button>
-                                
-                                <!--Buttons mobile-->
-                                <button class="bton-editar-icon"><i class="fa-solid fa-pen"></i></button>
-                                <button class="bton-eliminar-icon"> <i class="fa-solid fa-square-xmark"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2120236</td>
-                            <td>654+656</td>
-                            <td>Ingrid</td>
-                            <td>Perez</td>
-                            <td>33</td>
-                            <td class="buttons">
-                                <button class="bton-editar">Editar<i class="fa-solid fa-pen"></i></button>
-                                <button class="bton-eliminar">Eliminar <i class="fa-solid fa-square-xmark"></i></button>
-
-                                <!--Buttons mobile-->
-                                <button class="bton-editar-icon"><i class="fa-solid fa-pen"></i></button>
-                                <button class="bton-eliminar-icon"> <i class="fa-solid fa-square-xmark"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>152552</td>
-                            <td>Camilo</td>
-                            <td>Paola</td>
-                            <td>Sarmiento</td>
-                            <td>28</td>
-                            <td class="buttons">
-                                <button class="bton-editar">Editar<i class="fa-solid fa-pen"></i></button>
-                                <button class="bton-eliminar">Eliminar <i class="fa-solid fa-square-xmark"></i></button>
-
-                                <!--Buttons mobile-->
-                                <button class="bton-editar-icon"><i class="fa-solid fa-pen"></i></button>
-                                <button class="bton-eliminar-icon"> <i class="fa-solid fa-square-xmark"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>121212</td>
-                            <td>1019081492</td>
-                            <td>Ingrid</td>
-                            <td>Paba</td>
-                            <td>28</td>
-                            <td class="buttons">
-                                <button class="bton-editar">Editar<i class="fa-solid fa-pen"></i></button>
-                                <button class="bton-eliminar">Eliminar <i class="fa-solid fa-square-xmark"></i></button>
-
-                                <!--Buttons mobile-->
-                                <button class="bton-editar-icon"><i class="fa-solid fa-pen"></i></button>
-                                <button class="bton-eliminar-icon"> <i class="fa-solid fa-square-xmark"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>121212</td>
-                            <td>1019081492</td>
-                            <td>Ingrid</td>
-                            <td>paba guillen</td>
-                            <td>28</td>
-                            <td class="buttons">
-                                <button class="bton-editar">Editar<i class="fa-solid fa-pen"></i></button>
-                                <button class="bton-eliminar">Eliminar <i class="fa-solid fa-square-xmark"></i></button>
-
-                                <!--Buttons mobile-->
-                                <button class="bton-editar-icon"><i class="fa-solid fa-pen"></i></button>
-                                <button class="bton-eliminar-icon"> <i class="fa-solid fa-square-xmark"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>hola</td>
-                            <td>1032365389</td>
-                            <td>Diana Carolina</td>
-                            <td>gutiérrez loaiza</td>
-                            <td>35</td>
-                            <td class="buttons">
-                                <button class="bton-editar">Editar<i class="fa-solid fa-pen"></i></button>
-                                <button class="bton-eliminar">Eliminar <i class="fa-solid fa-square-xmark"></i></button>
-
-                                <!--Buttons mobile-->
-                                <button class="bton-editar-icon"><i class="fa-solid fa-pen"></i></button>
-                                <button class="bton-eliminar-icon"> <i class="fa-solid fa-square-xmark"></i></button>
-                            </td>
-                        </tr>
-                    </tbody>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2120236</td>
+                        <td>654+656</td>
+                        <td>Ingrid</td>
+                        <td>Perez</td>
+                        <td>33</td>
+                        <td><button class="bton-editar">Editar<i class="fa-solid fa-pen"></i></button>
+                            <button class="bton-eliminar">Eliminar <i class="fa-solid fa-square-xmark"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>152552</td>
+                        <td>Camilo</td>
+                        <td>Paola</td>
+                        <td>Sarmiento</td>
+                        <td>28</td>
+                        <td><button class="bton-editar">Editar<i class="fa-solid fa-pen"></i></button>
+                            <button class="bton-eliminar">Eliminar <i class="fa-solid fa-square-xmark"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>121212</td>
+                        <td>1019081492</td>
+                        <td>Ingrid</td>
+                        <td>Paba</td>
+                        <td>28</td>
+                        <td><button class="bton-editar">Editar<i class="fa-solid fa-pen"></i></button>
+                            <button class="bton-eliminar">Eliminar <i class="fa-solid fa-square-xmark"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>121212</td>
+                        <td>1019081492</td>
+                        <td>Ingrid</td>
+                        <td>paba guillen</td>
+                        <td>28</td>
+                        <td><button class="bton-editar">Editar<i class="fa-solid fa-pen"></i></button>
+                            <button class="bton-eliminar">Eliminar <i class="fa-solid fa-square-xmark"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>hola</td>
+                        <td>1032365389</td>
+                        <td>Diana Carolina</td>
+                        <td>gutiérrez loaiza</td>
+                        <td>35</td>
+                        <td><button class="bton-editar">Editar<i class="fa-solid fa-pen"></i></button>
+                            <button class="bton-eliminar">Eliminar <i class="fa-solid fa-square-xmark"></i></button></td>
+                    </tr>
                 </table>
+            </div>
             </section>
      
         </main>
