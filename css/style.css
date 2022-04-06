@@ -150,14 +150,15 @@ header{
     flex-direction: column;  
     justify-content: center;
     width: 100%;
+    height: 100%;
 }
 
 .bg-banner{
     background-image: url(../img/2.\ medico.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -120px;
     width: 100%;
+    height: 100%;
 }
 
 .conten-banner{
@@ -168,6 +169,7 @@ header{
     height: 200px;
     width: 75%;
     text-align: center;
+    padding-left: 10px;
 }
 
 .conten-banner h2{
@@ -248,7 +250,6 @@ header{
     display: flex;
     justify-content: center;
     width: 100%;
-    
 }
 
 .sec-covicho{
@@ -276,16 +277,6 @@ footer{
     font-size: 11px;
 }
 
-header img:hover{
-    transform: scale(1.1);
-    transition-duration: 0.3s;
-}
-
-.h-pte2 .linea:hover{
-    transform: none;
-}
-
-
 /*Login-------------------------------*/
 
 #login{
@@ -295,6 +286,8 @@ header img:hover{
     align-items: flex-end;
     width: 95%;
     height: 100vh;
+    margin: 0 auto;
+    max-width: 500px;
 }
 
 .bg-login{
@@ -383,6 +376,10 @@ header img:hover{
 }
 
 /*registro nuevo usuario--------------------*/
+
+#pacientes-body{
+    height: 100vh;
+}
 
 #header-register{
     display: flex;
@@ -574,152 +571,6 @@ tr:hover{
 .patients-btons .form-group .ico{
     margin-top: -15px;
 }
-
-
-/*Pacientes-------------------------------
-#patients{
-    margin-top: 20px;
-}
-
-.pacientes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#no-id{
-    width: 200px;
-}
-
-#table-patients{
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    width: 100%;
-    padding: 0 10px;
-}
-
-table{
-    font-size: 12px;
-	width:100%; 
-	border-collapse:collapse;
-    background-color:var(--gray-color);
-    text-align: center;
-}
-
-th{
-    border:2px solid var(--blue-color);
-    background-color: var(--dark-blue-color);
-    color: var(--white-color);
-    padding: 4px 2px;
-}
-
-td{
-	border:2px solid var(--blue-color);
-    padding: 6px;
-}
-
-tr:hover{
-    background-color: #19191954;
-}
-
-.bton-editar{
-    display: none;
-    padding: 5px;
-    background-color: var(--blue-color);
-    border-radius: 5px;
-    width: 100px;
-    border: none;
-    cursor: pointer;
-}
-
-.bton-eliminar{
-    display: none;
-    padding: 5px;
-    background-color: #A40101;
-    color: var(--white-color);
-    border-radius: 5px;
-    width: 100px;
-    margin: 0 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.bton-editar-icon{
-    background-color: var(--blue-color);
-    color: var(--white-color);
-    border-radius: 2px;
-    cursor: pointer;
-    margin-bottom:2px;
-    border: none;
-    padding: 5px;
-}
-
-.bton-eliminar-icon{
-    background-color: #A40101;
-    color: var(--white-color);
-    border-radius: 2px;
-    cursor: pointer;
-    margin-bottom:2px;
-    border: none;
-    padding: 5px;
-}
-
-.bton-editar:hover{
-    background-color: #1f747a;
-    box-shadow: 0 2px 3px var(--dark-blue-color);
-    color: var(--white-color);
-}
-
-.bton-eliminar:hover{
-    background-color: #5a0202;
-    box-shadow: 0 2px 3px var(--dark-blue-color);
-    color: var(--white-color);
-}
-
-#table-patients{
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.patients-btons{
-    display: flex;
-    height: 80%;
-    width: 100%;
-    justify-content: center;
-}
-
-.patients-btons .form-group{
-    display: flex;
-    width: 55%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.patients-btons .form-group input{
-    background-color: var(--white-color);
-    border: 1px solid var(--blue-color);
-    margin: 0;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-
-.patients-btons .bton-ingresar i{
-    margin-left: 5px;
-}
-
-.patients-btons .bton-ingresar{
-    margin-left: 0;
-}
-
-#patients h1{
-    text-align: center;
-    text-decoration: underline;
-    margin-bottom: 30px;
-}*/
 
 /*Dashboard*/
 
@@ -1050,11 +901,14 @@ tr:hover{
     }
 
     .bg-banner{
-        background-position:0;
+        background-size:cover;
+        height: 280px;
     }
 
     .conten-banner{
+        margin:auto 0;
         width: 75%;
+        height: 100%;
     }
 
     .conten-banner h2{
@@ -1086,6 +940,39 @@ tr:hover{
         max-width: 500px;
         margin: 0 auto;
     }
+
+    .logo-lgin{
+        font-size: 20px;
+    }
+
+    #patients .form-group{
+        font-size: 20px;
+    }
+
+    /*Pacientes*/
+    .patients-btons{
+        justify-content: space-between;
+        width: 76%;
+    }
+
+    .patients-btons .form-group{
+        justify-content: flex-end;
+    }
+
+    #patients-body .btons i{
+        background-color: var(--gray-color);
+        border-radius: 50%;
+        border: 3px solid var(--blue-color);
+        margin-left: 6px;
+        font-size: 50px;
+        color: var(--black-color);
+    }
+
+.patients-btons .form-group #no-id{
+    width: 250px;
+}
+
+
 
     /*formulario*/
 
@@ -1145,8 +1032,7 @@ tr:hover{
         margin-left: 10px;
     }
 
-
-
+    
 }
 
 @media (min-width: 1024px){
@@ -1160,10 +1046,52 @@ tr:hover{
         width: 250px;
     }
 
+
+    .bton-log{
+        width: 30%;
+        text-align: right;
+        margin-right: -30px;
+    }
+
+    .bg-banner{
+        height: 350px;
+    }
+
+    .info-contact i{
+     font-size: 12px;
+    }
+
+    .conten-banner h1{
+        font-size: 30px;
+    }
+
+    .conten-banner h1{
+        font-size: 26px;
+    }
+
+    .info-contact{
+        font-size: 14px;
+    }
+
     .linea{
         padding-right: 10px;
     }
 
+    .signos{
+        font-size: 18px;
+    }
+
+    .que-hacer{
+        font-size: 18px;
+    }
+
+    .sec-covicho p{
+        font-size: 18px;
+    }
+
+    .patients-btons .form-group #no-id{
+        width: 250px;
+    }
     /*Formulario*/
     #register-user{
         padding: 30px;
