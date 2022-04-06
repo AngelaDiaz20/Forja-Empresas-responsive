@@ -653,11 +653,6 @@ tr:hover{
     right: 0px;
     width: 80%;
     height: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.658), rgba(255, 255, 255, 0.658)), url(../img/13.\ guerreros.png);
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: 95%;
-    background-size: 70%;
 }
 
 .user{
@@ -733,7 +728,7 @@ tr:hover{
 }
 
 .franja-foot {
-    position: fixed;
+    z-index: 20;
     width: 100%;
     bottom: 0;
     padding-bottom: 0;
@@ -742,6 +737,70 @@ tr:hover{
 
 .franja-foot img{
     width: 100%;
+}
+
+.animacion-guerrero{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 0;
+}
+
+.fondo{
+    opacity: 0.5;
+    background-image: url(../img/guer.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.title-guerrero img{
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.world{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: url(../img/img.png);
+    background-size: cover;
+    box-shadow: inset 0 0 20px #000,
+                inset -40px -10px 20px rgba(3,32,56,07);
+    animation: world 7s linear infinite;
+
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+@keyframes world {
+    0%{
+        background-position-x:0;
+    }
+    100%{
+        background-position-x:-800px;
+    }
+    
 }
 
 
@@ -1032,6 +1091,28 @@ tr:hover{
         margin-left: 10px;
     }
 
+    .fondo{
+        width: 280px;
+        height: 280px;
+    }
+    
+    .title-guerrero img{
+        width: 250px;
+        height: 250px;
+    
+        top: 0px;
+        right: 50px;
+        margin: auto;
+    }
+    
+    .world{
+        width: 150px;
+        height: 150px;
+       
+        top: 64px;
+        right: 3px;
+    }
+
     
 }
 
@@ -1110,4 +1191,27 @@ tr:hover{
         font-size: 22px;
         margin-right: 20px;
     }
+
+    .fondo{
+        width: 350px;
+        height: 350px;
+    }
+    
+    .title-guerrero img{
+        width: 340px;
+        height: 340px;
+    
+        top: 0px;
+        right: 50px;
+        margin: auto;
+    }
+    
+    .world{
+        width: 190px;
+        height: 190px;
+       
+        top: 82px;
+        right: 6px;
+    }
+    
 }
