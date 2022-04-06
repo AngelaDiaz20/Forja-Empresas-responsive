@@ -24,6 +24,31 @@ body{
 
 /*Inicio-----------------------------*/
 
+.bton-login {
+    color: white;
+    background: rgba(29, 171, 209, 1);
+    animation: animacion 2s linear infinite;
+  }
+ 
+ @keyframes animacion {
+   0% {
+     box-shadow: 0 0 0 0 rgba(29, 171, 209, .6),  0 0 0 0 rgba(29, 171, 209, .6);
+   }
+ 
+   30% {
+     box-shadow: 0 0 0 10px rgba(29, 171, 209, 0), 0 0 0 0 rgba(29, 171, 209, .6);
+   }
+ 
+   65% {
+     box-shadow: 0 0 0 10px rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
+   }
+ 
+   100% {
+     box-shadow: 0 0 0 0 rgba(29, 171, 209, 0),  0 0 0 30px rgba(29, 171, 209, 0);
+   }
+ }
+ 
+
 #header-index{
     grid-area: header-index;
 }
@@ -424,6 +449,10 @@ footer{
     height: 100vh;
 }
 
+.degrade{
+    margin: 0 auto;
+}
+
 #header-register{
     display: flex;
     flex-direction: column;
@@ -486,7 +515,7 @@ footer{
 
 table{
     font-size: 14px;
-	width:80%; 
+	width:98%; 
     margin: 0 auto;
 	border-collapse:collapse;
     background-color: var(--gray-color);
@@ -503,6 +532,7 @@ th{
 td{
 	border:2px solid var(--blue-color);
     padding: 6px;
+    color: var(--black-color);
 }
 
 tr:hover{
@@ -1072,6 +1102,26 @@ tr:hover{
 
 .patients-btons .form-group #no-id{
     width: 250px;
+}
+
+.degrade{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    width: 85%;
+
+    background-image: linear-gradient(to bottom right, var(--blue-color), #c3eef8, var(--blue-color), #c3eef8, var(--blue-color), #c3eef8);
+    background-size: 200% 200%;
+    animation: movimiento 3s linear infinite;
+}
+
+@keyframes movimiento{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
 }
 
 
