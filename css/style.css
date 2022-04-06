@@ -304,8 +304,51 @@ footer{
     border-radius: 10px 10px 0 0;
     padding: 50px 0 50px;
     font-size: 16px;
-    
 }
+
+.logo-lgin img{
+    animation: scale 0.8s 0.2s backwards;
+}
+    
+@keyframes scale{
+    0%{
+        transform: scale(0);
+    }
+}  
+
+.logo-lgin p{
+        opacity: 0;
+        animation: aparecer 1s 1s forwards;
+    }
+    
+@keyframes aparecer {
+   0%{
+       transform: translateY(-40px);
+   }
+   40%{
+       opacity: 0;
+   }
+   50%{
+       opacity: 0.5;
+   }
+   100%{
+       opacity: 100;
+       transform: translate(0);
+   }
+}
+
+.logo-lgin p span{
+    animation: crecer 1s 2s forwards;
+}
+
+@keyframes crecer{
+    40%{
+        font-size: 18px;
+    }
+    100%{
+        color: var(--orange-color);
+    }
+} 
 
 .form-login{
     display: flex;
@@ -1170,9 +1213,21 @@ tr:hover{
         font-size: 18px;
     }
 
+    /*login*/
+    @keyframes crecer{
+        40%{
+            font-size: 24px;
+        }
+        100%{
+            color: var(--orange-color);
+        }
+    } 
+
     .patients-btons .form-group #no-id{
         width: 250px;
     }
+
+
     /*Formulario*/
     #register-user{
         padding: 30px;
