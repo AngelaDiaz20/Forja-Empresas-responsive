@@ -703,6 +703,10 @@ tr:hover{
     position: absolute;
 }
 
+.menu-side a{
+    color: var(--dark-color);
+}
+
 .log-menu{
     text-align: center;
     position: relative;
@@ -898,7 +902,7 @@ tr:hover{
     background-size: cover;
     box-shadow: inset 0 0 20px #000,
                 inset -40px -10px 20px rgba(3,32,56,07);
-    animation: world 7s linear infinite;
+    animation: world 18s linear infinite;
 
     position: absolute;
     top: 50px;
@@ -1272,6 +1276,10 @@ tr:hover{
     background-image: linear-gradient(to bottom right, var(--blue-color), #c3eef8, var(--blue-color), #c3eef8, var(--blue-color), #c3eef8);
     background-size: 200% 200%;
     animation: movimiento 3s linear infinite;
+}
+
+.world{
+    animation: world 12s linear infinite;
 }
 
 @keyframes movimiento{
