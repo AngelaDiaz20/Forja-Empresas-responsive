@@ -26,6 +26,7 @@ body{
 
 #header-index{
     grid-area: header-index;
+    overflow: hidden;
 }
 
 #main-index{
