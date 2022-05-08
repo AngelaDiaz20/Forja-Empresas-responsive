@@ -24,8 +24,7 @@ form.addEventListener('submit', validation=(e)=>{
         error.innerHTML = `<p>Error de credenciales</p> <i id="error" class="fa-solid fa-xmark"></i>`;
     }
 
-})
-
+});
 
 const iconEye = document.querySelector('.icon-eye');
 
