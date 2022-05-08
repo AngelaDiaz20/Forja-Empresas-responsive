@@ -51,15 +51,17 @@
         </div>
 
         <div class="search-id">
+            <form action="" method="post"  id="form-dashboard">
                 <div class="number-id">
                     <label for="number-id" class="number-id"></label>
                     <input type="number" name="number-id" id="number-id" placeholder="ㅤDigite el numero de documento" required>
                 </div>
 
                 <div class="ico">
-                    <a href="dashboard-alert.html"><i class="fa-solid fa-magnifying-glass" ></i></a>
-                    <a href="dashboard.html"><i class="fa-solid fa-arrow-rotate-right"></i></a> 
-                </div>
+                    <a href="#modal"><button type="submit" id="searchUser"><i class="fa-solid fa-magnifying-glass" ></i></button></a>
+                    <!--<a href="#modal" class="cta"><i class="fa-solid fa-magnifying-glass" ></i></a>-->
+                    <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a> 
+                </div></form>
         </div>
 
         <section class="animacion-guerrero">
@@ -74,10 +76,23 @@
             <img src="img/12. franja.svg" alt="" >
         </div>   
         </section>
+
+        <section id="modal" class="modal">
+            <div class="modalContainer">
+                <figure class="modalPicture">
+                    <img src="img/0. logoforja.png" alt="" class="modalImg">
+                </figure>
+                <h2 class="modalTitle">Resultados de búsqueda</h2>
+                <div class="modalInfo"></div>
+        </div>
+
+        
       
     </div>
     
     </main>
+
+    <script src="js/busqueda.js"></script>
 </body>
 
 </html>
