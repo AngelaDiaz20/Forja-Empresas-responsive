@@ -350,7 +350,7 @@ footer{
     max-width: 500px;
 }
 
-.warning{
+.warning, .warningg{
     display: none;
     justify-content: center;
     align-items: center;
@@ -365,12 +365,27 @@ footer{
     padding: 2px;
 }
 
-.warning i{
+.warningg{
+    display: flex;
+    width: 100%;
+    transition: 0.4s;
+    margin-left: 4px;
+    /*animation: ocultar 1s 2s forwards;*/
+}
+
+.warning i, .warningg i{
     margin-left: 10px;
     background-color: var(--white-color);
     color: var(--red-color);
     padding: 3px 5.5px;
     border-radius: 50%;
+}
+
+@keyframes ocultar {
+    100%{
+        opacity: 0;
+        overflow: hidden;
+    }
 }
 
 .bg-login{
@@ -874,6 +889,13 @@ tr:hover{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.search-id .search{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
