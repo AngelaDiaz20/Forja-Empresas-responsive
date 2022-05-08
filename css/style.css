@@ -1010,7 +1010,6 @@ tr:hover{
     height: 40px;
 }
 
-
 .modal{
     position: fixed;
     top: 0;
@@ -1116,6 +1115,16 @@ tr:hover{
 fieldset{
     width: 80%;
     padding: 20px 0;
+}
+
+.modal h3{
+    width: 80%;
+    background-color: #f3620e44;
+    margin-top:20px;
+}
+
+.modal h4{
+    margin-top:20px;
 }
 
 @keyframes aparecer {
