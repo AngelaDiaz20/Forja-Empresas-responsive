@@ -27,4 +27,22 @@ form.addEventListener('submit', validation=(e)=>{
 })
 
 
+const iconEye = document.querySelector('.icon-eye');
+
+iconEye.addEventListener("click", function () {
+    const icon = this.querySelector("i");
+
+    //Cambiar tipo del input (visualizar contraseña)
+    if(this.nextElementSibling.type === "password"){
+        this.nextElementSibling.type = "text";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+    }
+    else{
+        this.nextElementSibling.type = "password";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+    }//Cambiar tipo del input (ocultar contraseña)
+});
+
 
