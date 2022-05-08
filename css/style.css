@@ -1125,6 +1125,7 @@ fieldset{
 
 .modal h4{
     margin-top:20px;
+    width: 80%;
 }
 
 @keyframes aparecer {
