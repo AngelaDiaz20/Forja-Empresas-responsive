@@ -416,10 +416,10 @@ footer{
 
 .logo-lgin p{
         opacity: 0;
-        animation: aparecer 1s 1s forwards;
+        animation: llegar 1s 1s forwards;
     }
     
-@keyframes aparecer {
+@keyframes llegar {
    0%{
        transform: translateY(-40px);
    }
@@ -862,6 +862,7 @@ tr:hover{
     padding: 0px 5px 6px;
     border-radius: 8px;
     margin-right: 20px;
+    transition-duration: 4s;
 }
 
 .user div:hover{
@@ -927,6 +928,7 @@ tr:hover{
     font-size: 15px;
     padding: 5px 12px;
     margin-top: 15px;
+    transition-duration:  0.2s;
 }
 
 .ico i:hover{
@@ -1028,8 +1030,8 @@ tr:hover{
 }
 
 .buttons-modal button{
-    width: 150px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
 }
 
 .modal{
@@ -1047,6 +1049,8 @@ tr:hover{
 
     pointer-events: var(--pointer);
     transition: opacity 0.5s;
+
+    z-index: 1000;
 }
 
 .modal:target .modalContainer{
@@ -1124,6 +1128,9 @@ tr:hover{
     margin-bottom: 1em;
     line-height: 1.5;
     width: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y-mandatory;
+    scroll-behavior: smooth;
 }
 
 .modal:target .modalInfo{
@@ -1422,7 +1429,22 @@ fieldset{
     margin: 0;
 }
 
+@media (min-width: 500px){
 
+.buttons-modal{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 40px;
+}
+
+.buttons-modal button{
+    width: 150px;
+    height: 40px;
+}
+}
 
 
 @media (min-width: 768px) {
