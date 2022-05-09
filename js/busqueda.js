@@ -5,10 +5,7 @@ button.onclick = function search(e){
 
     let numberDocument = document.getElementById('number-id').value;
     let searchResult=document.querySelector(".modalInfo");
-    let errorsito=document.querySelector(".warningg");
-    errorsito.style.setProperty("visibility","visible");
-    errorsito.style.setProperty("opacity","1");
-    errorsito.style.setProperty("animation","ocultar 1s 2s forwards");
+    
 
     if (numberDocument.length > 5){
 
@@ -139,6 +136,10 @@ button.onclick = function search(e){
     }
 
     else if(numberDocument.length < 5){
+        let errorsito=document.querySelector(".warningg");
+        errorsito.style.setProperty("visibility","visible");
+        errorsito.style.setProperty("opacity","1");
+        errorsito.style.setProperty("animation","ocultar 1s 2s forwards");
         errorsito.innerHTML = `<p>Ingresa un número de identificación válido</p> <i id="error" class="fa-solid fa-xmark"></i>`
     }
 } 
