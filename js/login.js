@@ -19,6 +19,7 @@ form.addEventListener('submit', validation=(e)=>{
         window.setTimeout(()=>{
             window.location.href="dashboard.html"
         },500);
+        error.style.setProperty("display","none");
     }
     else{
         error.innerHTML = `<p>Error de credenciales</p> <i id="error" class="fa-solid fa-xmark"></i>`;

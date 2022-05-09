@@ -366,10 +366,10 @@ footer{
 }
 
 .warningg{
+    margin: 20px auto;
     display: flex;
-    width: 100%;
+    width: 80%;
     transition: 0.4s;
-    margin-left: 4px;
     /*animation: ocultar 1s 2s forwards;*/
 }
 
@@ -770,6 +770,14 @@ tr:hover{
     display: flex;
 }
 
+.imagotipo{
+    max-width: 50px;
+}
+
+#logo-normal{
+    display: none;
+}
+
 .menu-side {
     width: 20%;
     background-color: var(--black-color);
@@ -1082,6 +1090,17 @@ tr:hover{
     text-align: center;
     padding: 2.5em 1.5em;
     border-radius:1em ;
+    overflow-y: scroll;
+    scroll-snap-type:mandatory;
+}
+
+.modalContainer::-webkit-scrollbar{
+    width: 5px;
+}
+
+.modalContainer::-webkit-scrollbar-thumb{
+    background-color: var(--dark-blue-color);
+    border-radius: 5px;
 }
 
 .modalPicture{
@@ -1128,9 +1147,7 @@ tr:hover{
     margin-bottom: 1em;
     line-height: 1.5;
     width: 100%;
-    overflow-y: scroll;
-    scroll-snap-type: y-mandatory;
-    scroll-behavior: smooth;
+    height: 100%;
 }
 
 .modal:target .modalInfo{
@@ -1185,6 +1202,19 @@ fieldset{
     }
 }
 
+@media (min-width:460px){
+.warningg{
+    display: flex;
+    width: 100%;
+    transition: 0.4s;
+    margin-left: 4px;
+    /*animation: ocultar 1s 2s forwards;*/
+}
+}
+
+@media (min-width:600px) {
+   
+}
 
 
 /*dashboard alert----------------
@@ -1522,6 +1552,16 @@ fieldset{
 
     #patients .form-group{
         font-size: 20px;
+    }
+
+    .forja-logo{
+        display: none;
+    }
+    
+    #logo-normal{
+        width: 90%;
+        display: flex;
+        margin: auto;
     }
 
     /*Pacientes*/
