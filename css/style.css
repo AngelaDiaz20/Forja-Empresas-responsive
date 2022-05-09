@@ -781,8 +781,7 @@ tr:hover{
 .menu-side {
     width: 20%;
     background-color: var(--black-color);
-    height: 100%;
-    position: absolute;
+    height: 100vh;
 }
 
 .menu-side a{
@@ -975,7 +974,7 @@ tr:hover{
     height: 200px;
     background-repeat: no-repeat;
 
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -1345,6 +1344,12 @@ fieldset{
     margin: 10px 10px 10px 0px;
 }
 
+.registerPacient{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .h2-user-new{
     animation: 1s zooom 1;
 }
@@ -1442,6 +1447,7 @@ fieldset{
 
 .inputs3 input, .inputs3 select{
     width: 100%;
+    padding-left: 10px;
 }
 
 .radio-form div{
@@ -1638,6 +1644,10 @@ fieldset{
         justify-content: center;
     }
 
+    #si:focus, #no:focus{
+        box-shadow: none;
+    }
+
     #si, #no{
         margin: 0 5px;
     }
@@ -1679,7 +1689,6 @@ fieldset{
     .title-guerrero img{
         width: 250px;
         height: 250px;
-    
         top: 0px;
         right: 50px;
         margin: auto;
@@ -1688,7 +1697,6 @@ fieldset{
     .world{
         width: 150px;
         height: 150px;
-       
         top: 64px;
         right: 3px;
     }
