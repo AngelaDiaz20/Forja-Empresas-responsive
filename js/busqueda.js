@@ -7,7 +7,7 @@ button.onclick = function search(e){
     let searchResult=document.querySelector(".modalInfo");
     
 
-    if (numberDocument.length > 5){
+    if (numberDocument > 0 ){
 
         if(numberDocument == 52368795){
             console.log("Correcto");
@@ -21,7 +21,7 @@ button.onclick = function search(e){
             </fieldset>
             <h4>¿Deseas registrar datos de vacunación?</h4>
             <div class="buttons-modal">
-                <a href="registro.html">
+                <a href="vacunacion.html">
                     <button class="bton-login">¡Si!, gracias
                     </button>
                 </a>
@@ -54,7 +54,7 @@ button.onclick = function search(e){
 
             <h4>¿Deseas registrar datos de vacunación?</h4>
             <div class="buttons-modal">
-                <a href="registro.html">
+                <a href="vacunacion.html">
                     <button class="bton-login">¡Si!, gracias
                     </button>
                 </a>
@@ -107,7 +107,7 @@ button.onclick = function search(e){
             <h3>No existen registros de vacunación</h3>
             <h4>¿Deseas registrar un nuevo paciente?</h4>
             <div class="buttons-modal">
-                <a href="registro.html">
+                <a href="vacunacion.html">
                     <button class="bton-login">¡Si!, gracias
                     </button>
                 </a>
