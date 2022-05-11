@@ -20,6 +20,7 @@
 
 body{
     font-size: 14px;
+    overflow-x: hidden;
 }
 
 /*Inicio-----------------------------*/
@@ -1317,8 +1318,60 @@ fieldset{
     background-color: #00000065;
 }*/
 
-/*FORMULARIO--------*/
+/*FORMULARIO REGISTRO VACUNACIÓN--------*/
+fieldset{
+    border: none;
+    width: 100%;
+}
 
+.h2-user-new{
+    width: 100%;
+}
+
+.buttons-head{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.buttons-head .bton-ingresar{
+    width: 160px;
+}
+
+.buttons-head a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.buttons-head h4{
+    padding-left: 10px;
+}
+
+.div-buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.observation{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.observation textarea{
+    border: 2px solid var(--blue-color);
+    width: 60%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+/*FORMULARIO----------------------------*/
 #register-user{
     border: 3px solid var(--gray-color);
     padding: 10px;
@@ -1336,7 +1389,10 @@ fieldset{
     background-color: var(--gray-color);
     border-radius: 10px;
     padding: 10px 20px;
+    border: 2px solid black;
 }
+
+
 
 .form-register input, .form-register select{
     border: 2px solid var(--blue-color);
@@ -1448,6 +1504,14 @@ fieldset{
 .inputs3 input, .inputs3 select{
     width: 100%;
     padding-left: 10px;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+
+select{
+    padding-left: 6px;
 }
 
 .radio-form div{

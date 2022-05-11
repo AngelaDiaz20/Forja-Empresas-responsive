@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="es-Es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="registro" autor="Angela Díaz">
+        <title> Forja | Registro Vacunación </title>
+        <link type="image/x-icon" href="img/icono-forja.svg" rel="icon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <script src="https://kit.fontawesome.com/98bd21cde9.js" crossorigin="anonymous"></script>
+    </head>
+        
+    <body>
+        <header id="header-register">
+            <div class="logo"><a href="index.html"><img src="img/0. logoforja.png" alt=""></a>
+            <div class="btons">
+                <a href="dashboard.html"> <i class="fa-solid fa-house-chimney-user"></i></a>
+                <a href="login.html"><i class="fa-solid fa-power-off"></i></a>
+            </div></div>
+            <img class="franja" src="img/12. franja.svg" alt="">
+        </header>
+
+        <main>
+
+            <section id="register-user">
+
+                
+
+                <form action="" method="post" class="registerPacient">
+
+                <div class="buttons-head">
+                    <h4>Estado:ACTIVO</h4>
+
+                    <div class="div-buttons">
+                        <a href="paciente.html"><button class="bton-ingresar">Guardar cambios</button></a>
+                        <a href="dashboard.html" class="bton-ingresar">Cerrar</a>
+                    </div>
+                </div>
+                <h2 class="h2-user-new"><span>INFORMACIÓN DEL PACIENTE</span></h2>
+                <fieldset>
+                    <div class="form-register">
+
+                    <div class="user-data">
+                        <div class="group-data">
+                            <label for="fecha de registro"></label>
+                            <input type="date" id="date" name="date" value="Fecha de registro" required>
+                        </div>
+                        <div class="group-data">
+                            <label for="número registro"></label>
+                            <input name="registr" id="registr" type="number" placeholder="N° Registro" min="0" required>
+                        </div>
+                    </div>
+
+                    <div class="title-user-new">
+                        <div>
+                            <i class="fa-solid fa-user"></i>
+                            <h3>DATOS PERSONALES</h3>
+                        </div>
+                    </div>
+
+                    <div class="user-data">
+                    
+                        <div class="group-data">
+                            <label for="nombre"></label>
+                            <input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre" required>
+                        </div>
+
+                        <div class="group-data">
+                            <label for="apellido"></label>
+                            <input name="apeliido" id="apeliido" type="text" placeholder="Apellidos" required>
+                        </div>
+
+                        <div class="group-data">
+                            <label for="number-id"></label>
+                            <input name="number-id" id="number-id" type="number" placeholder="Número de identificación" required>
+                        </div>
+
+                        <div>
+                            <label for="date"></label>
+                            <input type="date" id="date" name="date"  value="Fecha de nacimiento" min="" max="2022-11-05" required>
+                        </div>
+
+                        <div class="group-data">
+                            <label for="edad"></label>
+                            <input name="edad" id="edad" type="number" placeholder="Edad" min="0" required>
+                        </div>
+
+                        <div class="group-data">
+                            <label for="eps" class="control-label"></label>
+                            <select class="form-control" required id="eps">
+                                <option value="">EPS</option>
+                                <option value="NuevaEPS">Nueva EPS</option>
+                                <option value="Sura">Sura</option>
+                                <option value="EPS Salud Total">EPS Salud Total</option>
+                                <option value="Medimás">Medimás</option>
+                                <option value="Famisanar">Famisanar</option>
+                                <option value="Compensar">Compensar</option>
+                                <option value="Coomeva">Coomeva</option>        
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                </fieldset>
+
+                    <fieldset>
+
+                    <div class="form-register">
+                    <div class="title-user-new">
+                        <div>
+                            <i class="fa-solid fa-syringe"></i>
+                            <h3>INFORMACIÓN DE VACUNACIÓN</h3>
+                        </div>
+                    </div>
+
+                    <div class="user-data">
+
+                        <div class="group-data">
+                            <label for="sede" class="control-label"></label>
+                            <select class="form-control" required id="sede">
+                                <option value="">Sede</option>
+                                <option value="NuevaEPS">Nueva EPS</option>
+                                <option value="Sura">Sura</option>
+                                <option value="EPS Salud Total">EPS Salud Total</option>
+                                <option value="Medimás">Medimás</option>
+                                <option value="Famisanar">Famisanar</option>
+                                <option value="Compensar">Compensar</option>
+                                <option value="Coomeva">Coomeva</option>        
+                            </select>
+                        </div>
+
+                        <div class="group-data">
+                            <label for="sede" class="control-label"></label>
+                            <select class="form-control" required id="sede">
+                                <option value="">Maria Fernandez</option>
+                                <option value="NuevaEPS">Nueva EPS</option>
+                                <option value="Sura">Sura</option>
+                                <option value="EPS Salud Total">EPS Salud Total</option>
+                                <option value="Medimás">Medimás</option>
+                                <option value="Famisanar">Famisanar</option>
+                                <option value="Compensar">Compensar</option>
+                                <option value="Coomeva">Coomeva</option>        
+                            </select>
+                        </div>
+
+                        <div class="group-data">
+                            <label for="id-profesional"></label>
+                            <input name="id-profesional" id="id-profesional" type="number" placeholder="id profesional" min="0" required>
+                        </div>
+
+                        <div class="group-data">
+                            <label for="dosis"></label>
+                            <input name="dosis" id="dosis" type="number" placeholder="Dosis" min="0" required>
+                        </div>
+                </div>
+
+                <div class="inputs3">
+                    
+                    <div class="group-data">
+                        <label for="preexistencias" class="control-label"></label>
+                        <select class="form-control" id="preexistencias" required>
+                            <option value="">Biológico</option>
+                            <option value="Pfizer">Pfizer</option>
+                            <option value="Moderna">Moderna</option>
+                            <option value="AstraZeneca">AstraZeneca</option>
+                            <option value="Janssen">Janssen</option>
+                            <option value="Sinovac">Sinovac</option>       
+                        </select>
+                    </div>
+
+                    <div class="group-data">
+                        <label for="first-dosis"></label>
+                        <input name="first-dosis" id="first-dosis" type="date" placeholder="Primera dosis" required>
+                    </div>
+
+                    <div class="group-data">
+                        <label for="second-dosis"></label>
+                        <input name="second-dosis" id="second-dosis" type="date" placeholder="Segunda dosis" required>
+                    </div>
+                    
+                </div>
+
+                <div class="observation">
+                    <label for="observaciones"></label>
+                    <textarea rows="2" cols="30" name="observaciones" placeholder="Observaciones adicionales"></textarea></div>
+                </div>
+
+                </div>
+               </div>
+            </fieldset>
+            </form>         
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2021 FORJA EMPRESAS</p>
+</footer>
+
+</body>
