@@ -899,6 +899,7 @@ tr:hover{
     justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
+    z-index: 80;
 }
 
 .search-id .search{
@@ -906,6 +907,7 @@ tr:hover{
     align-items: flex-end;
     justify-content: center;
     flex-wrap: wrap;
+    z-index: 60;
 }
 
 .number-id input{
@@ -919,6 +921,7 @@ tr:hover{
     height: 30px;
     outline:none;
     box-shadow: none;
+    z-index: 60;
 }
 
 .number-id input:focus{
@@ -937,6 +940,7 @@ tr:hover{
     padding: 5px 12px;
     margin-top: 15px;
     transition-duration:  0.2s;
+    z-index: 50;
 }
 
 .ico i:hover{
@@ -947,7 +951,7 @@ tr:hover{
 }
 
 .franja-foot {
-    z-index: 20;
+    z-index: 1;
     width: 100%;
     bottom: 0;
     padding-bottom: 0;
@@ -979,6 +983,7 @@ tr:hover{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    z-index: 0;
 }
 
 .title-guerrero img{
